@@ -7,12 +7,14 @@
         <span class="list-one-price"> {{ product.price }}zł</span>
       </li>
     </ul>
-    <button v-on:click="reducePriceBy1">Reduce Price by 1</button>
-    <button v-on:click="reducePriceBy5">Reduce Price by 5</button>
+    <button v-on:click="reducePrice(1)">Reduce Price by 1</button>
+    <button v-on:click="reducePrice(5)">Reduce Price by 5</button>
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
+
 export default {
   computed: {
     products() {
@@ -28,17 +30,13 @@ export default {
     //   });
     //   return saleProducts;
     // }
-    saleProducts() {
-      return this.$store.getters.saleProducts;
-    }
+    ...mapGetters(["saleProducts"])
   },
   methods: {
-    reducePriceBy1() {
-      this.$store.commit("reducePrice", 1);
-    },
-    reducePriceBy5() {
-      this.$store.commit("reducePrice", 5);
-    }
+    // reducePrice(n) {
+    //   this.$store.dispatch("reducePrice", n);
+    // },
+    ...mapActions(["reducePrice"])
   }
 };
 </script>

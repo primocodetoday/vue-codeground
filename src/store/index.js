@@ -22,13 +22,21 @@ export default new Vuex.Store({
       });
     }
   },
+  // now async below
   mutations: {
-    reducePrice(state, n) {
+    reducePrice(state, payload) {
       state.products.forEach(product => {
-        product.price -= n;
+        product.price -= payload;
       });
     }
   },
-  actions: {},
+  // async only in actions
+  actions: {
+    reducePrice(context, payload) {
+      setTimeout(() => {
+        context.commit("reducePrice", payload);
+      }, 2000);
+    }
+  },
   modules: {}
 });
