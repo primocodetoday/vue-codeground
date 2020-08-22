@@ -13,7 +13,7 @@ export default new Vuex.Store({
     ]
   },
   getters: {
-    saleProducts: state => {
+    saleProducts(state) {
       return state.products.map(product => {
         return {
           name: `**${product.name}**`,
@@ -22,7 +22,13 @@ export default new Vuex.Store({
       });
     }
   },
-  mutations: {},
+  mutations: {
+    reducePrice(state, n) {
+      state.products.forEach(product => {
+        product.price -= n;
+      });
+    }
+  },
   actions: {},
   modules: {}
 });
