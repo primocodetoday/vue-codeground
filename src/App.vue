@@ -2,8 +2,9 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <hr />
-    <product-list-one v-bind:products="products"></product-list-one>
-    <product-list-two v-bind:products="products"></product-list-two>
+    <product-list-one></product-list-one>
+    <hr />
+    <product-list-two></product-list-two>
   </div>
 </template>
 
@@ -19,14 +20,7 @@ export default {
     "product-list-two": ProductListTwo
   },
   data() {
-    return {
-      products: [
-        { name: "EKIDEN ONE", price: 49.99 },
-        { name: "RUN SUPPORT", price: 119.99 },
-        { name: "KIPRUN LONG 2", price: 249.99 },
-        { name: "KIPRUN KD PLUS", price: 279.99 }
-      ]
-    };
+    return {};
   }
 };
 </script>

@@ -2,20 +2,32 @@
   <div class="list-one">
     <h2>I'm product list one</h2>
     <ul>
-      <li v-for="product in products" :key="product.name">
+      <li v-for="product in saleProducts" :key="product.name">
         <span class="list-one-name">{{ product.name }}</span>
         <span class="list-one-price"> {{ product.price }}zł</span>
       </li>
     </ul>
-    <hr />
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    products: {
-      type: Array
+  computed: {
+    products() {
+      return this.$store.state.products;
+    },
+    // hard coded getter in component
+    // saleProducts() {
+    //   const saleProducts = this.$store.state.products.map(product => {
+    //     return {
+    //       name: `**${product.name}**`,
+    //       price: product.price / 2
+    //     };
+    //   });
+    //   return saleProducts;
+    // }
+    saleProducts() {
+      return this.$store.getters.saleProducts;
     }
   }
 };
