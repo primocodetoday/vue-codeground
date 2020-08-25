@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import moduleTD from "./modules/todos";
+import moduleTD from "./modules/moduleTD";
 
 Vue.use(Vuex);
 
