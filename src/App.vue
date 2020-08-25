@@ -1,24 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <hr />
-    <product-list-one></product-list-one>
-    <hr />
-    <product-list-two></product-list-two>
   </div>
 </template>
 
 <script>
-import ProductListOne from "./components/ProductListOne.vue";
-import ProductListTwo from "./components/ProductListTwo.vue";
-
 export default {
   name: "App",
 
-  components: {
-    "product-list-one": ProductListOne,
-    "product-list-two": ProductListTwo
-  },
+  components: {},
   data() {
     return {};
   }
