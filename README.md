@@ -6,8 +6,8 @@ The place to train Vuex, Vux and other Vue libraries  </h3>
 
 <!-- <h3 align="center"></h3> -->
 
-Branches: 
-1️⃣ master - clean vue cli project
+Branches:  
+1️⃣ master - clean vue cli project  
 2️⃣ vuex-methods - sample usage of getters, mutations & actions
 
 <br>
