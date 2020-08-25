@@ -8,7 +8,8 @@ The place to train Vuex, Vux and other Vue libraries  </h3>
 
 Branches:  
 1️⃣ master - clean vue cli project  
-2️⃣ vuex-methods - sample usage of getters, mutations & actions
+2️⃣ vuex-methods - sample usage of getters, mutations & actions  
+3️⃣ vuex-todoapp - to do app 
 
 <br>
 
