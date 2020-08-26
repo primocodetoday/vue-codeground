@@ -2,7 +2,7 @@
   <div>
     <h3>Add Todo</h3>
     <div class="add-container">
-      <form @submit="onSubmit">
+      <form @submit.prevent="onSubmit">
         <input type="text" v-model="newTodoTitle" placeholder="Add Todo..." />
         <button type="submit">Submit</button>
       </form>
@@ -22,8 +22,7 @@ export default {
   },
   methods: {
     ...mapActions(["addTodo"]),
-    onSubmit(e) {
-      e.preventDefault();
+    onSubmit() {
       this.addTodo(this.newTodoTitle);
     }
   }

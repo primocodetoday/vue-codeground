@@ -1,6 +1,4 @@
-﻿// import axios from "axios";
-
-import Axios from "axios";
+﻿import axios from "axios";
 
 const moduleTD = {
   state: () => ({
@@ -15,20 +13,30 @@ const moduleTD = {
     },
     newTodo: (state, todo) => {
       state.todos.unshift(todo);
+    },
+    removeTodo: (state, id) => {
+      state.todos = state.todos.filter(todo => todo.id !== id);
     }
   },
   actions: {
     async fetchTodos({ commit }) {
-      await Axios.get("https://jsonplaceholder.typicode.com/todos").then(response => {
+      await axios.get("https://jsonplaceholder.typicode.com/todos").then(response => {
         commit("setTodos", response.data);
       });
     },
     async addTodo({ commit }, title) {
-      await Axios.post("https://jsonplaceholder.typicode.com/todos", {
-        title,
-        completed: false
-      }).then(response => {
-        commit("newTodo", response.data);
+      await axios
+        .post("https://jsonplaceholder.typicode.com/todos", {
+          title,
+          completed: false
+        })
+        .then(response => {
+          commit("newTodo", response.data);
+        });
+    },
+    async deleteTodo({ commit }, id) {
+      await axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`).then(() => {
+        commit("removeTodo", id);
       });
     }
   }

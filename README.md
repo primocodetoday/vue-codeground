@@ -13,12 +13,12 @@ Branches:
 
 <br>
 
-| Main Tech | Vue                                |
-| --------- | ---------------------------------- |
-| Addons    | Mixed - Vuex              |
-| Backend   | Mixed - Firebase, Json Place Holder     |
-| Styles    |        |
-| Code      | ES6, Linter(airbnb), Prettier |
+| Main Tech | Vue 2                                |
+| --------- | ------------------------------------ |
+| Addons    | Mixed - Vuex                         |
+| Backend   | Mixed - Firebase, Json Place Holder  |
+| Styles    |                                      |
+| Code      | ES6, Linter(airbnb), Prettier        |
 
 ### Scripts 💻
 

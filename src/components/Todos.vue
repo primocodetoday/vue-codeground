@@ -2,7 +2,14 @@
   <div>
     <h3>Todos List</h3>
     <div class="todos-list">
-      <div v-for="todo in allTodos" :key="todo.id" class="todos-list-item">{{ todo.title }}</div>
+      <div v-for="todo in allTodos" :key="todo.id" class="todos-list-item">
+        {{ todo.title }}
+        <inline-svg
+          v-on:click="deleteTodo(todo.id)"
+          class="todos-list-item-icon"
+          :src="require('../assets/delete.svg')"
+        ></inline-svg>
+      </div>
     </div>
   </div>
 </template>
@@ -12,11 +19,12 @@ import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "Todos",
+  components: {},
   computed: {
     ...mapGetters(["allTodos"])
   },
   methods: {
-    ...mapActions(["fetchTodos"])
+    ...mapActions(["fetchTodos", "deleteTodo"])
   },
   created() {
     this.fetchTodos();
@@ -50,6 +58,16 @@ export default {
     position: relative;
     cursor: pointer;
     animation: appear 0.3s ease;
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      fill: #fff;
+      cursor: pointer;
+    }
   }
 }
 </style>
