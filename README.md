@@ -2,7 +2,7 @@
 <h2 align="center"> ❗️ Vue codeground ✍️</h2>
 
 <h3 align="center">
-The place to train Vuex, Vux and other Vue libraries  </h3>
+The place to train Vuex, Vuetify and other Vue libraries  </h3>
 
 <!-- <h3 align="center"></h3> -->
 
