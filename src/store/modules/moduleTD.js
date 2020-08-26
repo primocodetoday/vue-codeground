@@ -38,6 +38,14 @@ const moduleTD = {
       await axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`).then(() => {
         commit("removeTodo", id);
       });
+    },
+
+    async filterTodos({ commit }, selected) {
+      await axios
+        .get(`https://jsonplaceholder.typicode.com/todos?_limit=${selected}`)
+        .then(response => {
+          commit("setTodos", response.data);
+        });
     }
   }
 };
