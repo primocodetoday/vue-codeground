@@ -8,7 +8,9 @@ The place to train Vuex, Vux and other Vue libraries  </h3>
 
 Branches:  
 1️⃣ master - clean vue cli project  
-2️⃣ vuex-methods - sample usage of getters, mutations & actions
+2️⃣ vuex-methods - sample usage of getters, mutations & actions (Json Placeholder)  
+3️⃣ vuex-todoapp - to do app with vuex  
+🔥 Live: [![Netlify Status](https://api.netlify.com/api/v1/badges/a7a42342-0c25-48fb-a3d7-961ae3192452/deploy-status)](https://elegant-thompson-924167.netlify.app)  
 
 <br>
 
