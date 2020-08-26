@@ -16,6 +16,12 @@ const moduleTD = {
     },
     removeTodo: (state, id) => {
       state.todos = state.todos.filter(todo => todo.id !== id);
+    },
+    upTodo: (state, updatedTodo) => {
+      const index = state.todos.findIndex(todo => todo.id === updatedTodo.id);
+      if (index !== -1) {
+        state.todos.splice(index, 1, updatedTodo);
+      }
     }
   },
   actions: {
@@ -39,12 +45,18 @@ const moduleTD = {
         commit("removeTodo", id);
       });
     },
-
     async filterTodos({ commit }, selected) {
       await axios
         .get(`https://jsonplaceholder.typicode.com/todos?_limit=${selected}`)
         .then(response => {
           commit("setTodos", response.data);
+        });
+    },
+    async updateTodo({ commit }, updTodo) {
+      await axios
+        .put(`https://jsonplaceholder.typicode.com/todos/${updTodo.id}`, updTodo)
+        .then(response => {
+          commit("upTodo", response.data);
         });
     }
   }
