@@ -1,29 +1,25 @@
+# Testing Vue.js Components
 
-<h2 align="center"> ❗️  Vue codeground ✍️</h2>
+[![](https://vueschool.s3.amazonaws.com/9318e19655ce267304ebf5df7eca7154/testing-vuejs-components.png)](https://vueschool.io/courses/learn-how-to-test-vuejs-components)
 
-<h3 align="center">
-The place to train Vuex, Vux and other Vue libraries.
-</h3>
+This repository contains the the starting point of the [Testing Vue.js Components](https://vueschool.io/courses/learn-how-to-test-vuejs-components) course.
 
-### Branches:  
-#### 1️⃣  master - clean vue 2.6 project  
-#### 2️⃣  vuex-methods - sample usage of getters, mutations & actions (Json Placeholder)  
-#### 3️⃣  vuex-todoapp - todo app with vuex. Life deploy: [![Netlify Status](https://api.netlify.com/api/v1/badges/a7a42342-0c25-48fb-a3d7-961ae3192452/deploy-status)](https://elegant-thompson-924167.netlify.app)  
-#### 4️⃣  vue-blog - simple blog app with firebase. Life deploy: [![Netlify Status](https://api.netlify.com/api/v1/badges/4daccdf8-92f8-46b5-b5ef-491df8d79a93/deploy-status)](https://kind-jang-cea1ac.netlify.app)
+Learn how to test your Vue.js components like a pro with Jest and the official unit testing library for Vue.js - Vue Test Utils
 
-<br>
+In this course, you’ll learn everything you need to know to write proper unit tests for your Vue components.
 
-| Main Tech | Vue 2.6                            |
-| --------- | ---------------------------------- |
-| Addons    | Mixed - Vuex                       |
-| Backend   | Mixed - Firebase, Json Place Holder|
-| Styles    | Mixed - Vuetify                                   |
-| Code      | ES6, Linter(airbnb), Prettier      |
+Not sure how to mount and render your component to perform assertions. Not sure what you should and shouldn't test? Or how to test a specific thing? This course is for you!
 
-### Scripts 💻
+**By the end of this testing course you will know**
+- Which tools are required for an efficient testing workflow
+- How to mount and render your Vue components
+- How to programmatically interact with your components through Vue Test Utils
+- How to test computed properties and watchers
+- How to test Vue.js lifecycle methods
+- How to traverse the DOM and test …
+- How to stub child components
+- How to test that a Vuex Store is injected properly
 
-| Command         | Description            |
-| --------------- | ---------------------- |
-| `npm run serve` | Open local server      |
-| `npm run build` | Create optimized build |
-| `npm run lint`  | Lints and fixes files |
+You need a basic understanding of testing in JavaScript and Jest. We recommend watching [JavaScript Testing Fundamentals](https://vueschool.io/courses/javascript-testing-fundamentals) and [Test with Jest](https://vueschool.io/courses/test-with-jest) if you're not already familiar with the topics.
+
+[Click here to watch the testing course](https://vueschool.io/courses/learn-how-to-test-vuejs-components).
