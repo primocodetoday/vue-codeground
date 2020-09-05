@@ -1,5 +1,5 @@
 
-<h2 align="center"> ❗️  Vue codeground ✍️</h2>
+<h2 align="center"> ❗️  Vue playground ✍️</h2>
 
 <h3 align="center">
 The place to train Vuex, Vux and other Vue libraries.
