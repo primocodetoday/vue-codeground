@@ -13,7 +13,8 @@ The place to train Vuex, Vux and other Vue libraries.
 ### Branches:  
 * 1️⃣  master - clean vue 2.6 project  
 * 2️⃣  vuex-methods - sample usage of getters, mutations & actions (Json Placeholder)  
-* 3️⃣  vuex-todoapp - todo app with vuex. Life deploy: [![Netlify Status](https://api.netlify.com/api/v1/badges/a7a42342-0c25-48fb-a3d7-961ae3192452/deploy-status)](https://elegant-thompson-924167.netlify.app)  *#### 4️⃣  vue-blog - simple blog app with firebase. Life deploy: [![Netlify Status](https://api.netlify.com/api/v1/badges/4daccdf8-92f8-46b5-b5ef-491df8d79a93/deploy-status)](https://kind-jang-cea1ac.netlify.app)
+* 3️⃣  vuex-todoapp - todo app with vuex. Life deploy: [![Netlify Status](https://api.netlify.com/api/v1/badges/a7a42342-0c25-48fb-a3d7-961ae3192452/deploy-status)](https://elegant-thompson-924167.netlify.app)  
+* 4️⃣  vue-blog - simple blog app with firebase. Life deploy: [![Netlify Status](https://api.netlify.com/api/v1/badges/4daccdf8-92f8-46b5-b5ef-491df8d79a93/deploy-status)](https://kind-jang-cea1ac.netlify.app)
 * 5️⃣ router-advanced - Short training with router params
 
 <br>
