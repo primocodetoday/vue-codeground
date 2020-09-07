@@ -1,0 +1,11 @@
+﻿<template>
+  <div>
+    <h3>I'm Component Two</h3>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="sass" scoped></style>
